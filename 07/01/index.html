@@ -383,21 +383,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <div class="list-group" id="playlist">
 				
-				<!--
-                    <a href="kathaa-2.mp3" class="list-group-item">
+				
+                    <a href="res/7.1.1.mp3" class="list-group-item">
                         <i class="glyphicon glyphicon-play"></i>
                         भेकराजः-मण्डूकः
-                        <span class="badge">0:45</span>
+                        <span class="badge">0:23</span>
                     </a>
 
                     
 
-                    <a href="../elan/transcripts/001z.mp3" class="list-group-item">
+                    <a href="res/7.1.2.mp3" class="list-group-item">
                         <i class="glyphicon glyphicon-play"></i>
-                        asd
+                      asdf
                         <span class="badge badge-info">1:26</span>
                     </a>
--->
+
                 </div>
 				<script>
       (async () => {
@@ -409,7 +409,7 @@ document.addEventListener('DOMContentLoaded', function() {
             htmlString += `<a href="res/${file.name}" class="list-group-item" title=""><i class="glyphicon glyphicon-play"></i>${file.name}<span class="badge">${file.size/1024}</span></a>`;
          // }
         }
-        document.getElementById('playlist').innerHTML += htmlString;
+        document.getElementById('playlist').innerHTML += "<!--"+ htmlString + "-->";
       })()
     </script>
             </div>
