@@ -406,7 +406,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let htmlString = '';
         for (let file of data) {
          // if(!hiddenfiles.includes(file.name)){
-            htmlString += `<a href="${file.name}" class="list-group-item" title=""><i class="glyphicon glyphicon-play"></i>${file.name}<span class="badge">${file.name}</span></a>`;
+            htmlString += `<a href="res/${file.name}" class="list-group-item" title=""><i class="glyphicon glyphicon-play"></i>${file.name}<span class="badge">${file.size/1024}</span></a>`;
          // }
         }
         document.getElementById('playlist').innerHTML += htmlString;
