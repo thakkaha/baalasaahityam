@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>ज्ञानेश्वरः Playlist</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="data:image/gif;" rel="icon" type="image/x-icon" />
         <!-- Bootstrap -->
         <link xx-href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
@@ -254,16 +254,41 @@ body {
 <style>
 #playPause{background-color:#ff9933}
 </style>
+  
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="../../css/navbar.css?v=2.0">
+    <link rel="stylesheet" href="../../css/secondary-navbar.css?v=2.0">
+    <link rel="stylesheet" href="../../css/homepage.css?v=2.0">
+    <link rel="stylesheet" href="../../css/profile.css?v=2.0">
+    <link rel="stylesheet" href="../../css/archive.css?v=2.0">
+    <link rel="stylesheet" href="../../css/article.css?v=2.0">
+    <link rel="stylesheet" href="../../css/form.css?v=2.0">
+    <link rel="stylesheet" href="../../css/general.css?v=2.0">
+
+    <style type="text/css">
+.mainpage .full-width-card h3.author.by:before{
+ content: '— ';
+ margin-right: 2px;
+ margin-left: 20px;
+}
+.mainpage .full-width-card h3.author span:not(:first-of-type):last-of-type:before{
+ content: ' ,  ';
+}
+
+.mainpage .full-width-card h3.fullText span:not(:first-of-type):last-of-type:before{
+ content: ' ,  ';
+}
+</style>
         <!-- wavesurfer.js -->
         <script xx-src="https://unpkg.com/wavesurfer.js/dist/wavesurfer.min.js"></script>
     </head>
-    <body>
+    <body>   
         <div class="container">
             <div class="header">
                 <ul class="nav nav-pills pull-right">
                     <li><a href="../"><i class="glyphicon glyphicon-home" style="color:orange"></i></a></li>
                 </ul>
-                <h1 itemprop="name">ज्ञानेश्वरः</h1>
+                <h1 itemprop="name"><span class="saffron">ज्ञानेश्वरः</span></h1>
             </div>
             <div id="demo">
                 <div class="row" style="margin: 30px 0">
@@ -414,11 +439,15 @@ body {
                     </a>
                 </div>
             </div>
-
-            <div class="footer row">
-
+  
+        </div>
+ <div class="container footer"><!-- container -->
+        <div class="row justify-content-center"><!-- row -->
+            <div class="col-md text-center">
+                <p><small>© 2019 KKSU All Rights Reserved</small></p>
             </div>
         </div>
+    </div>
 
    		<script>/*!
  * wavesurfer.js 3.2.0 (2019-10-25)
