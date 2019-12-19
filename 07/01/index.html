@@ -251,6 +251,9 @@ body {
   transform: rotate(-45deg);
 }
 </style>
+<style>
+#playPause{background-color:#ff9933}
+</style>
         <!-- wavesurfer.js -->
         <script xx-src="https://unpkg.com/wavesurfer.js/dist/wavesurfer.min.js"></script>
     </head>
@@ -465,8 +468,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Load a track by index and highlight the corresponding link
     var setCurrentSong = function(index) {
         links[currentTrack].classList.remove('active');
+		links[currentTrack].style.backgroundColor="#fff";
         currentTrack = index;
         links[currentTrack].classList.add('active');
+		links[currentTrack].style.backgroundColor="#ff9933";
         wavesurfer.load(links[currentTrack].href);
     };
 
